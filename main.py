@@ -16,7 +16,7 @@ def get_links(url):
 
     links_list = {}
 
-    image_tags = soup.select('figure div.YdIix div.L34o8 div.zmDAx a img.YVj9w')
+    image_tags = soup.select('figure div.YdIix div.L34o8 div.zmDAx a div.MorZF img')
 
     for tags in image_tags:
         data = tags.attrs['srcset']
